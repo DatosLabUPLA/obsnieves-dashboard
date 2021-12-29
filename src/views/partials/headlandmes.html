@@ -1,0 +1,52 @@
+<!-- BOOTSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<!-- CUSTOM CSS -->
+<link rel="stylesheet" href="/css/main.css">
+
+<!-- ANIMATE CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<!-- FONT AWESOME -->
+<script src="https://kit.fontawesome.com/3dbbf3ccc7.js" crossorigin="anonymous"></script>
+
+<!-- ICON -->
+<link rel="icon" href="https://observatorionieves.cl/static/img/favicon.png">
+
+<!-- GOOGLE CHART -->
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Mes', 'Promedio (%)'],
+          ['Enero',  2.054],
+          ['Febrero',  1.663],
+          ['Marzo',  1.601],
+          ['Abril',  3.888],
+          ['Mayo',  13.074],
+          ['Junio',  29.861],
+          ['Julio',  40.282],
+          ['Agosto',  35.51],
+          ['Septiembre',  33.888],
+          ['Octubre',  23.734],
+          ['Noviembre',  13.049],
+          ['Diciembre',  4.79],
+        ]);
+
+        var options = {
+          title: 'Promedio mensual NDSI sobre las subcuencas media y alta del Rio Aconcagua, usando Lansat. 1989-2020',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
