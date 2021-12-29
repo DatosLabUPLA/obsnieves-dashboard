@@ -133,3 +133,9 @@ ul{
   overflow:auto;
   height: 95px;
 }
+
+.sidebar-navigation li ul {
+  display:none;
+  position:absolute;
+  min-width: 140px;
+}
