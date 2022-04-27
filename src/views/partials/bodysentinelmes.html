@@ -1,0 +1,213 @@
+<!-- Layout wrapper -->
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+      <!-- Menu -->
+
+      <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+        <div class="app-brand demo">
+          <a href="index.html" class="app-brand-link">
+            
+            <img src="https://observatorionieves.cl/static/img/logos_obsnieves/logo-horizontal-color-positivo.png" alt=""
+    class="animated bounceIn" style="max-height: 90px">
+          </a>
+
+          <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+            <i class="bx bx-chevron-left bx-sm align-middle"></i>
+          </a>
+        </div>
+
+        <div class="menu-inner-shadow"></div>
+
+        <ul class="menu-inner py-1">
+          <!-- Dashboard -->
+          <li class="menu-item active">
+            <a href="https://observatorionieves.cl/" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-home-circle"></i>
+              <div data-i18n="Analytics">Inicio</div>
+            </a>
+          </li>
+
+          <!-- Layouts -->
+          <li class="menu-header small text-uppercase">
+            <span class="menu-header-text">Visualizadores</span>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bx-dock-top"></i>
+              <div data-i18n="Account Settings">Landsat</div>
+            </a>
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="https://dashboard.observatorionieves.cl/" class="menu-link">
+                  <div data-i18n="Account">Visualizador Mensual</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="https://dashboard.observatorionieves.cl/landsat_anual" class="menu-link">
+                  <div data-i18n="Notifications">Visualizador Anual</div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bx-dock-top"></i>
+              <div data-i18n="Authentications">Sentinel</div>
+            </a>
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="https://dashboard.observatorionieves.cl/sentinel_mensual" class="menu-link" target="_blank">
+                  <div data-i18n="Basic">Visualizador Mensual</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="https://dashboard.observatorionieves.cl/sentinel_anual" class="menu-link" target="_blank">
+                  <div data-i18n="Basic">Visualizador Anual</div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bx-dock-top"></i>
+              <div data-i18n="Misc">MODIS</div>
+            </a>
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="" class="menu-link">
+                  <div data-i18n="Error">MOD10A1 CurrentState DOY </div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="" class="menu-link">
+                  <div data-i18n="Under Maintenance">MOD10A1 CurrentState DOY zona central</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="" class="menu-link">
+                  <div data-i18n="Under Maintenance">MOD10A1 Descargas (subsubcuencas)</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="" class="menu-link">
+                  <div data-i18n="Under Maintenance">MOD10A1 y MYD10A1 MonthlyIntercopartion</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="" class="menu-link">
+                  <div data-i18n="Under Maintenance">MOD10A1 y MYD10A1 YearlyIntercopartion</div>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+      <!-- / Menu -->
+
+      <!-- Layout container -->
+      
+      <div class="layout-page">
+        <!-- Navbar -->
+          <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+            <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+              <i class="bx bx-menu bx-sm"></i>
+            </a>
+          </div>
+        <!-- / Navbar -->
+
+        <!-- Content wrapper -->
+        
+        <div class="content-wrapper">
+        
+          <div class="card-group" style="height:700px">
+            <div class="card">
+              <div class="card-body">
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      Seleccione mes
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/january.html" target="iframe1">Enero</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/february.html" target="iframe1">Febrero</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/march.html" target="iframe1">Marzo</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/april.html" target="iframe1">Abril</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/may.html" target="iframe1">Mayo</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/june.html" target="iframe1">Junio</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/july.html" target="iframe1">Julio</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/august.html" target="iframe1">Agosto</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/september.html" target="iframe1">Septiembre</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/october.html" target="iframe1">Octubre</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/november.html" target="iframe1">Noviembre</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/december.html" target="iframe1">Diciembre</a></li>
+                    </ul>
+                  </div>
+                <iframe name="iframe1" src="https://observatorionieves.cl/media/maps/landsat/nieve/landsat_mensual_January_2021.html" width="100%" height="100%" allowfullscreen="True" loading="lazy"></iframe>
+              </div>
+              <div class="card-footer"></div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      Seleccione mes
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/january.html" target="iframe2">Enero</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/february.html" target="iframe2">Febrero</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/march.html" target="iframe2">Marzo</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/april.html" target="iframe2">Abril</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/may.html" target="iframe2">Mayo</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/june.html" target="iframe2">Junio</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/july.html" target="iframe2">Julio</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/august.html" target="iframe2">Agosto</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/september.html" target="iframe2">Septiembre</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/october.html" target="iframe2">Octubre</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/november.html" target="iframe2">Noviembre</a></li>
+                        <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/december.html" target="iframe2">Diciembre</a></li>
+                    </ul>
+                  </div>
+                <iframe name="iframe2" src="https://observatorionieves.cl/media/maps/landsat/nieve/landsat_mensual_January_2021.html"width="100%" height="100%" allowfullscreen="True" loading="lazy"></iframe>
+              </div>
+              <div class="card-footer"></div>
+            </div>
+          </div>
+<!-- / 
+          <div class="card text-center">
+            <div class="card-header">
+              <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://observatorionieves.cl/media/maps/landsat/nieve/landsat_mensual_January_2021.html" target="iframe3">Landsat Mensual</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://observatorionieves.cl/media/maps/landsat/nieve/landsat_mensual_January_2021.html" target="iframe3">Landsat Anual</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <iframe name="iframe3"
+              src="https://observatorionieves.cl/media/maps/landsat/nieve/landsat_mensual_January_2021.html"
+              class="animated fadeInUp" width="100%" height="100%"
+              allowfullscreen="True" loading="lazy">
+              </iframe>
+            </div>
+          </div> 
+        -->
+             <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                <a class="nav-link" href="file:///C:/Users/aleja/Desktop/file.html" target="iframe3">Sentinel Mensual</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="file:///C:/Users/aleja/Desktop/file.html" target="iframe3">Sentinel Anual</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body"style="height:400px">
+            <iframe name="iframe3"
+            src="file:///C:/Users/aleja/Desktop/file.html"
+            width="100%" height="100%"
+            allowfullscreen="True" loading="lazy">
+            </iframe>
+          </div>
+          <!-- / Content -->

@@ -5,8 +5,16 @@ router.get('/', (req, res) => {
     res.render('index.html', { title: 'Observatorio Satelital de Nieves' });
 });
 
-router.get('/landsat_mensual', (req, res) => {
-    res.render('landsatmensual.html', { title: 'Observatorio Satelital de Nieves' });
+router.get('/landsat_anual', (req, res) => {
+    res.render('landsatanual.html', { title: 'Observatorio Satelital de Nieves' });
+});
+
+router.get('/sentinel_mensual', (req, res) => {
+    res.render('sentinelmensual.html', { title: 'Observatorio Satelital de Nieves' });
+});
+
+router.get('/sentinel_anual', (req, res) => {
+    res.render('sentinelanual.html', { title: 'Observatorio Satelital de Nieves' });
 });
 
 module.exports = router;
