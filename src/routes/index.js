@@ -17,4 +17,12 @@ router.get('/sentinel_anual', (req, res) => {
     res.render('sentinelanual.html', { title: 'Observatorio Satelital de Nieves' });
 });
 
+router.get('/modis_anual', (req, res) => {
+    res.render('modisanual.html', { title: 'Observatorio Satelital de Nieves' });
+});
+
+router.get('/modis_mensual', (req, res) => {
+    res.render('modismensual.html', { title: 'Observatorio Satelital de Nieves' });
+});
+
 module.exports = router;
