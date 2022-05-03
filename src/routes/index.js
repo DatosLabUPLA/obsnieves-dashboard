@@ -25,4 +25,16 @@ router.get('/modis_mensual', (req, res) => {
     res.render('modismensual.html', { title: 'Observatorio Satelital de Nieves' });
 });
 
+router.get('/modis_descargas', (req, res) => {
+    res.render('modisdescargas.html', { title: 'Observatorio Satelital de Nieves' });
+});
+
+router.get('/modis_DOY', (req, res) => {
+    res.render('modisDOY.html', { title: 'Observatorio Satelital de Nieves' });
+});
+
+router.get('/modis_DOY_zona_central', (req, res) => {
+    res.render('modisDOYcentral.html', { title: 'Observatorio Satelital de Nieves' });
+});
+
 module.exports = router;
