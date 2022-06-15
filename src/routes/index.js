@@ -37,4 +37,8 @@ router.get('/modis_DOY_zona_central', (req, res) => {
     res.render('modisDOYcentral.html', { title: 'Observatorio Satelital de Nieves' });
 });
 
+router.get('/test', (req, res) => {
+    res.render('bodytest.html', { title: 'Observatorio Satelital de Nieves' });
+});
+
 module.exports = router;
