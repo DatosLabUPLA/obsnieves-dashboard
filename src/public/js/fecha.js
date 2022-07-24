@@ -2,6 +2,7 @@ var fecha = new Date,
 date = fecha.getDate()-4,
 month = fecha.getMonth()+1, 
 year = fecha.getFullYear();
+month2 = fecha.getMonth() 
 
     if(date < 10) date = ("0" + date);
     if(month < 10) month = ("0" + month);

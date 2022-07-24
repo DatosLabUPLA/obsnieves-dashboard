@@ -1,229 +1,339 @@
 <!-- Layout wrapper -->
 <div class="layout-wrapper layout-content-navbar">
-    <div class="layout-container">
-      <!-- Menu -->
-  
-      <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme" style=height:1200px;>
-        <div class="app-brand demo">
-          <a href="https://observatorionieves.cl/visualizadores/" class="app-brand-link">
-            
-            <img src="https://observatorionieves.cl/static/img/logos_obsnieves/logo-horizontal-color-positivo.png" alt="" class="animated bounceIn" style="max-height: 90px">
+  <div class="layout-container">
+    <!-- Menu -->
+
+    <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme" style=height:930px;>
+      <div class="app-brand demo">
+        <a href="https://observatorionieves.cl/visualizadores/" class="app-brand-link">
+
+          <img src="https://observatorionieves.cl/static/img/logos_obsnieves/logo-horizontal-color-positivo.png" alt=""
+            class="animated bounceIn" style="max-height: 90px">
+        </a>
+
+        <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+          <i class="bx bx-chevron-left bx-sm align-middle"></i>
+        </a>
+      </div>
+
+      <div class="menu-inner-shadow"></div>
+
+      <ul class="menu-inner py-1">
+        <!-- Dashboard -->
+        <li class="menu-item active">
+          <a href="https://observatorionieves.cl/" class="menu-link">
+            <i class="menu-icon tf-icons bx bx-home-circle"></i>
+            <div data-i18n="Analytics">Inicio</div>
           </a>
-  
-          <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
-            <i class="bx bx-chevron-left bx-sm align-middle"></i>
+        </li>
+
+        <!-- Layouts -->
+        <li class="menu-header small text-uppercase">
+          <span class="menu-header-text">Visualizadores</span>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <i class="menu-icon tf-icons bx bx-dock-top"></i>
+            <div data-i18n="Account Settings">Landsat</div>
           </a>
-        </div>
-  
-        <div class="menu-inner-shadow"></div>
-  
-        <ul class="menu-inner py-1">
-          <!-- Dashboard -->
-          <li class="menu-item active">
-            <a href="https://observatorionieves.cl/" class="menu-link">
-              <i class="menu-icon tf-icons bx bx-home-circle"></i>
-              <div data-i18n="Analytics">Inicio</div>
-            </a>
-          </li>
-  
-          <!-- Layouts -->
-          <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">Visualizadores</span>
-          </li>
-          <li class="menu-item">
-            <a href="javascript:void(0);" class="menu-link menu-toggle">
-              <i class="menu-icon tf-icons bx bx-dock-top"></i>
-              <div data-i18n="Account Settings">Landsat</div>
-            </a>
-            <ul class="menu-sub">
-              <li class="menu-item">
-                <a href="https://dashboard.observatorionieves.cl/" class="menu-link">
-                  <div data-i18n="Account">Visualizador Mensual</div>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="https://dashboard.observatorionieves.cl/landsat_anual" class="menu-link">
-                  <div data-i18n="Notifications">Visualizador Anual</div>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-item">
-            <a href="javascript:void(0);" class="menu-link menu-toggle">
-              <i class="menu-icon tf-icons bx bx-dock-top"></i>
-              <div data-i18n="Authentications">Sentinel</div>
-            </a>
-            <ul class="menu-sub">
-              <li class="menu-item">
-                <a href="https://dashboard.observatorionieves.cl/sentinel_mensual" class="menu-link">
-                  <div data-i18n="Basic">Visualizador Mensual</div>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="https://dashboard.observatorionieves.cl/sentinel_anual" class="menu-link">
-                  <div data-i18n="Basic">Visualizador Anual</div>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-item">
-            <a href="javascript:void(0);" class="menu-link menu-toggle">
-              <i class="menu-icon tf-icons bx bx-dock-top"></i>
-              <div data-i18n="Authentications">MODIS</div>
-            </a>
-            <ul class="menu-sub">
-              <li class="menu-item">
-                <a href="https://dashboard.observatorionieves.cl/modis_DOY" class="menu-link">
-                  <div data-i18n="Error">MOD10A1 CurrentState DOY </div>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="https://dashboard.observatorionieves.cl/modis_DOY_zona_central" class="menu-link">
-                  <div data-i18n="Under Maintenance">MOD10A1 CurrentState DOY zona central</div>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="https://dashboard.observatorionieves.cl/modis_descargas" class="menu-link">
-                  <div data-i18n="Under Maintenance">MOD10A1 Descargas (subsubcuencas)</div>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="https://dashboard.observatorionieves.cl/modis_mensual" class="menu-link">
-                  <div data-i18n="Under Maintenance">MOD10A1 y MYD10A1 MonthlyIntercopartion</div>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="https://dashboard.observatorionieves.cl/modis_anual" class="menu-link">
-                  <div data-i18n="Under Maintenance">MOD10A1 y MYD10A1 YearlyIntercopartion</div>
-                </a>
-              </li>
-            </ul>
-          </li>
-           <!-- / BOTONES -->
-         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="https://dashboard.observatorionieves.cl/" class="menu-link">
+                <div data-i18n="Account">Visualizador Mensual</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="https://dashboard.observatorionieves.cl/landsat_anual" class="menu-link">
+                <div data-i18n="Notifications">Visualizador Anual</div>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <i class="menu-icon tf-icons bx bx-dock-top"></i>
+            <div data-i18n="Authentications">Sentinel</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="https://dashboard.observatorionieves.cl/sentinel_mensual" class="menu-link">
+                <div data-i18n="Basic">Visualizador Mensual</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="https://dashboard.observatorionieves.cl/sentinel_anual" class="menu-link">
+                <div data-i18n="Basic">Visualizador Anual</div>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <i class="menu-icon tf-icons bx bx-dock-top"></i>
+            <div data-i18n="Authentications">MODIS</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="https://dashboard.observatorionieves.cl/modis_DOY" class="menu-link">
+                <div data-i18n="Error">MOD10A1 CurrentState DOY </div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="https://dashboard.observatorionieves.cl/modis_DOY_zona_central" class="menu-link">
+                <div data-i18n="Under Maintenance">MOD10A1 CurrentState DOY zona central</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="https://dashboard.observatorionieves.cl/modis_descargas" class="menu-link">
+                <div data-i18n="Under Maintenance">MOD10A1 Descargas (subsubcuencas)</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="https://dashboard.observatorionieves.cl/modis_mensual" class="menu-link">
+                <div data-i18n="Under Maintenance">MOD10A1 y MYD10A1 MonthlyIntercopartion</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="https://dashboard.observatorionieves.cl/modis_anual" class="menu-link">
+                <div data-i18n="Under Maintenance">MOD10A1 y MYD10A1 YearlyIntercopartion</div>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-header small text-uppercase">
+          <span class="menu-header-text">Base de Datos</span>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <i class="menu-icon tf-icons bx bx-data"></i>
+            <div data-i18n="Misc">Información</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="https://observatorionieves.cl/media/maps/tree_maps.html" class="menu-link" target="_blank">
+                <div data-i18n="Account">Árbol de Mapas</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="https://observatorionieves.cl/media/graph/tree_graph.html" class="menu-link" target="_blank">
+                <div data-i18n="Notifications">Árbol de Gráficos</div>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- / BOTONES -->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
           <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+            <path
+              d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
           </symbol>
         </svg>
-        <div class="card-body" style="max-height: 60px;">
-        <div class="alert alert-primary d-flex align-items-center" role="alert" style="width:200px; height: 50px;" onclick="descripcion()">
-          <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
-          <div>
-            Landsat Mensual
+        <div class="card-body">
+          <div class="alert alert-primary d-flex align-items-center" role="alert" style="width:200px; height: 42px;"
+            onclick="descripcion()">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+              <use xlink:href="#info-fill" />
+            </svg>
+            <div>
+              Landsat Mensual
+            </div>
           </div>
-        </div>
-        <script> type="text/javascript"
-          function descripcion(){
-            swal({
-
-              title: 'Landsat Mensual',
-              text: 'En base a imágenes satelitales fusionadas de Landsat 4, 5 , 7 y 8 se establece una comparación estacional entre los distintos meses del año sobre la cuenca del Río Aconcagua mediante un panel divisorio. La información es recopilada a partir de los valores del promedio mensual del Indice Normalizado de Nieve (NDSI). Esta interfaz de usuario le permite seleccionar los meses de interés a analizar, desplegando el panel divisorio donde se visualizará el resultado dentro del mapa.'
-            })
-          }
-        </script>
-        </div> 
-
-        <div class="card-body" style="max-height: 60px;">
-          <div class="alert alert-primary" role="alert" style="width:200px; height:50px;"><a href="https://observatorionieves.cl/media/maps/tree_maps.html" class="alert-link" style="max-width:200px">Árbol de mapas</a>
+          <script> type = "text/javascript"
+            function descripcion() {
+              Swal.fire({
+                title: 'Landsat Mensual',
+                text: 'En base a imágenes satelitales fusionadas de Landsat 4, 5 , 7 y 8 se establece una comparación estacional entre los distintos meses del año sobre la cuenca del Río Aconcagua mediante un panel divisorio. La información es recopilada a partir de los valores del promedio mensual del Indice Normalizado de Nieve (NDSI). Esta interfaz de usuario le permite seleccionar los meses de interés a analizar, desplegando el panel divisorio donde se visualizará el resultado dentro del mapa.'
+              })
+            }
+          </script>
+          <div class="alert alert-primary d-flex align-items-center" role="alert" style="width:200px; height: 42px;"
+            onclick="promedio()">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+              <use xlink:href="#info-fill" />
+            </svg>
+            <div>
+              Promedio NDSI
+            </div>
           </div>
+          <script> type = "text/javascript"
+            function promedio() {
+              Swal.fire({
+                position: 'top-left',
+                imageHeight: 350,
+                imageUrl: '/img/promedio.png',
+              })
+            }
+          </script>
         </div>
-
-        <div class="card-body" style="max-height: 60px">
-          <div class="alert alert-primary" role="alert" style="width:200px; height:50px;"><a href="https://observatorionieves.cl/media/graph/tree_graph.html" class="alert-link" style="max-width:200px">Árbol de gráficos</a>
-          </div>
-        </div>
-      </ul>
-
         <footer>
-          <img src="/img/teleamb.png" alt=""class="animated bounceIn" style="max-height: 80px">
-        <img src="/img/datoslab.png" alt=""class="animated bounceIn" style="max-height: 250px; width: 250px;">
+          <div class="mb-2 mb-md-0" style="padding-left: 1rem;">
+            ©
+            <script>document.write(new Date().getFullYear());</script>, by
+            <a href="https://datoslab.cl/" target="_blank" class="footer-link fw-bolder">DatosLab</a>
+          </div>
         </footer>
-        
-      </aside>
+    </aside>
 
- <!-- / Menu -->
-  
-          <!-- Layout container -->
-          
-          <div class="layout-page">
-            <!-- Navbar -->
-              <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-                <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
-                  <i class="bx bx-menu bx-sm"></i>
+    <!-- / Menu -->
+
+    <!-- Layout container -->
+
+    <div class="layout-page">
+      <!-- Navbar -->
+      <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+          <i class="bx bx-menu bx-sm"></i>
+        </a>
+      </div>
+      <!-- / Navbar -->
+
+      <!-- Content wrapper -->
+
+      <div class="content-wrapper">
+
+        <div class="card-group" style="height:450px">
+          <div class="card">
+            <div class="card-body">
+              <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #696cff">
+                  Seleccione mes
                 </a>
-              </div>
-            <!-- / Navbar -->
-  
-            <!-- Content wrapper -->
-            
-            <div class="content-wrapper">
-            
-              <div class="card-group" style="height:670px">
-                <div class="card">
-                  <div class="card-body">
-                     <div class="dropdown">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                        Seleccione mes
-                        </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/january.html" target="iframe1">Enero</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/february.html" target="iframe1">Febrero</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/march.html" target="iframe1">Marzo</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/april.html" target="iframe1">Abril</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/may.html" target="iframe1">Mayo</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/june.html" target="iframe1">Junio</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/july.html" target="iframe1">Julio</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/august.html" target="iframe1">Agosto</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/september.html" target="iframe1">Septiembre</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/october.html" target="iframe1">Octubre</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/november.html" target="iframe1">Noviembre</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/december.html" target="iframe1">Diciembre</a></li>
-                    </ul>
-                  </div>
-                    <iframe name="iframe1" src="https://observatorionieves.cl/media/maps/landsat/mensual/december.html" width="100%" height="100%" allowfullscreen="True" loading="lazy"></iframe>
-                  </div>
-                </div>
-  
-                <div class="card">
-                  <div class="card-body">
-                    <div class="dropdown">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                        Seleccione mes
-                        </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/january.html" target="iframe2">Enero</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/february.html" target="iframe2">Febrero</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/march.html" target="iframe2">Marzo</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/april.html" target="iframe2">Abril</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/may.html" target="iframe2">Mayo</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/june.html" target="iframe2">Junio</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/july.html" target="iframe2">Julio</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/august.html" target="iframe2">Agosto</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/september.html" target="iframe2">Septiembre</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/october.html" target="iframe2">Octubre</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/november.html" target="iframe2">Noviembre</a></li>
-                      <li><a class="dropdown-item" href="https://observatorionieves.cl/media/maps/landsat/mensual/december.html" target="iframe2">Diciembre</a></li>
-                    </ul>
-                  </div>
-                    <iframe name="iframe2" src="https://observatorionieves.cl/media/maps/landsat/mensual/december.html"width="100%" height="100%" allowfullscreen="True" loading="lazy"></iframe>
-                  </div>
-                </div>
-              </div>
-                 <div class="card-header">
-                <ul class="nav nav-tabs card-header-tabs">
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://observatorionieves.cl/media/graph/landsat/mensual/promedio_mensual_ndsi_1989_2020.html" target="iframe3">Landsat Mensual</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://observatorionieves.cl/media/graph/landsat/anual/promedio_anual_ndsi_1989_2020.html" target="iframe3">Landsat Anual</a>
-                  </li>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" 
+                    onclick="document.getElementById('dropdownMenuLink').innerHTML = 'Enero'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/january.html"
+                      target="iframe1">Enero</a></li>
+                  <li><a class="dropdown-item"
+                      onclick="document.getElementById('dropdownMenuLink').innerHTML = 'Febrero'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/february.html"
+                      target="iframe1">Febrero</a></li>
+                  <li><a class="dropdown-item" 
+                    onclick="document.getElementById('dropdownMenuLink').innerHTML = 'Marzo'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/march.html"
+                      target="iframe1">Marzo</a></li>
+                  <li><a class="dropdown-item" 
+                    onclick="document.getElementById('dropdownMenuLink').innerHTML = 'Abril'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/april.html"
+                      target="iframe1">Abril</a></li>
+                  <li><a class="dropdown-item" 
+                    onclick="document.getElementById('dropdownMenuLink').innerHTML = 'Mayo'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/may.html" 
+                      target="iframe1">Mayo</a></li>
+                  <li><a class="dropdown-item" 
+                    onclick="document.getElementById('dropdownMenuLink').innerHTML = 'Junio'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/june.html"
+                      target="iframe1">Junio</a></li>
+                  <li><a class="dropdown-item" 
+                    onclick="document.getElementById('dropdownMenuLink').innerHTML = 'Julio'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/july.html"
+                      target="iframe1">Julio</a></li>
+                  <li><a class="dropdown-item"
+                      onclick="document.getElementById('dropdownMenuLink').innerHTML = 'Agosto'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/august.html"
+                      target="iframe1">Agosto</a></li>
+                  <li><a class="dropdown-item"
+                      onclick="document.getElementById('dropdownMenuLink').innerHTML = 'Septiembre'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/september.html"
+                      target="iframe1">Septiembre</a></li>
+                  <li><a class="dropdown-item"
+                      onclick="document.getElementById('dropdownMenuLink').innerHTML = 'Octubre'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/october.html"
+                      target="iframe1">Octubre</a></li>
+                  <li><a class="dropdown-item"
+                      onclick="document.getElementById('dropdownMenuLink').innerHTML = 'Noviembre'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/november.html"
+                      target="iframe1">Noviembre</a></li>
+                  <li><a class="dropdown-item"
+                      onclick="document.getElementById('dropdownMenuLink').innerHTML = 'Diciembre'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/december.html"
+                      target="iframe1">Diciembre</a></li>
                 </ul>
               </div>
-              <div class="card-body"style="height:400px">
-                <iframe name="iframe3"
-                src="https://observatorionieves.cl/media/graph/landsat/mensual/promedio_mensual_ndsi_1989_2020.html"
-                width="100%" height="100%"
-                allowfullscreen="True" loading="lazy">
-                </iframe>
+              <iframe name="iframe1" src="/img/test.html"
+                width="100%" height="100%" allowfullscreen="True" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink2"
+                  data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #696cff">
+                  Seleccione mes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                  <li><a class="dropdown-item"
+                      onclick="document.getElementById('dropdownMenuLink2').innerHTML = 'Enero'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/january.html"
+                      target="iframe2">Enero</a></li>
+                  <li><a class="dropdown-item"
+                      onclick="document.getElementById('dropdownMenuLink2').innerHTML = 'Febrero'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/february.html"
+                      target="iframe2">Febrero</a></li>
+                  <li><a class="dropdown-item"
+                      onclick="document.getElementById('dropdownMenuLink2').innerHTML = 'Marzo'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/march.html"
+                      target="iframe2">Marzo</a></li>
+                  <li><a class="dropdown-item"
+                      onclick="document.getElementById('dropdownMenuLink2').innerHTML = 'Abril'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/april.html"
+                      target="iframe2">Abril</a></li>
+                  <li><a class="dropdown-item" 
+                    onclick="document.getElementById('dropdownMenuLink2').innerHTML = 'Mayo'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/may.html" 
+                      target="iframe2">Mayo</a></li>
+                  <li><a class="dropdown-item"
+                      onclick="document.getElementById('dropdownMenuLink2').innerHTML = 'Junio'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/june.html"
+                      target="iframe2">Junio</a></li>
+                  <li><a class="dropdown-item"
+                      onclick="document.getElementById('dropdownMenuLink2').innerHTML = 'Julio'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/july.html"
+                      target="iframe2">Julio</a></li>
+                  <li><a class="dropdown-item"
+                      onclick="document.getElementById('dropdownMenuLink2').innerHTML = 'Agosto'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/august.html"
+                      target="iframe2">Agosto</a></li>
+                  <li><a class="dropdown-item"
+                      onclick="document.getElementById('dropdownMenuLink2').innerHTML = 'Septiembre'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/september.html"
+                      target="iframe2">Septiembre</a></li>
+                  <li><a class="dropdown-item"
+                      onclick="document.getElementById('dropdownMenuLink2').innerHTML = 'Octubre'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/october.html"
+                      target="iframe2">Octubre</a></li>
+                  <li><a class="dropdown-item"
+                      onclick="document.getElementById('dropdownMenuLink2').innerHTML = 'Noviembre'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/november.html"
+                      target="iframe2">Noviembre</a></li>
+                  <li><a class="dropdown-item"
+                      onclick="document.getElementById('dropdownMenuLink2').innerHTML = 'Diciembre'"
+                      href="https://observatorionieves.cl/media/maps/landsat/mensual/december.html"
+                      target="iframe2">Diciembre</a></li>
+                </ul>
               </div>
-              <!-- / Content -->
+              <iframe name="iframe2" src="/img/test.html"
+                width="100%" height="100%" allowfullscreen="True" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link"
+                href="https://observatorionieves.cl/media/graph/landsat/mensual/promedio_mensual_ndsi_1989_2020.html"
+                target="iframe3">Landsat Mensual</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                href="https://observatorionieves.cl/media/graph/landsat/anual/promedio_anual_ndsi_1989_2020.html"
+                target="iframe3">Landsat Anual</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <iframe name="iframe3"
+            src="https://observatorionieves.cl/media/graph/landsat/mensual/promedio_mensual_ndsi_1989_2020.html"
+            width="100%" height="100%" allowfullscreen="True" loading="lazy"></iframe>
+        </div>
