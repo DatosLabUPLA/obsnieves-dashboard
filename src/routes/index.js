@@ -41,4 +41,7 @@ router.get('/test', (req, res) => {
     res.render('bodytest.html', { title: 'Observatorio Satelital de Nieves' });
 });
 
+router.get('/descargas', (req, res) => {
+    res.render('descargas.html', { title: 'Observatorio Satelital de Nieves' });
+});
 module.exports = router;

@@ -1,0 +1,327 @@
+<!-- Layout wrapper -->
+<div class="layout-wrapper layout-content-navbar">
+  <div class="layout-container">
+    <!-- Menu -->
+
+    <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme" style=height:930px;>
+      <div class="app-brand demo">
+        <a href="https://observatorionieves.cl/visualizadores/" class="app-brand-link">
+
+          <img src="https://observatorionieves.cl/static/img/logos_obsnieves/logo-horizontal-color-positivo.png" alt=""
+            class="animated bounceIn" style="max-height: 90px">
+        </a>
+
+        <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+          <i class="bx bx-chevron-left bx-sm align-middle"></i>
+        </a>
+      </div>
+
+      <div class="menu-inner-shadow"></div>
+
+      <ul class="menu-inner py-1">
+        <!-- Dashboard -->
+        <li class="menu-item active">
+          <a href="https://observatorionieves.cl/" class="menu-link">
+            <i class="menu-icon tf-icons bx bx-home-circle"></i>
+            <div data-i18n="Analytics">Inicio</div>
+          </a>
+        </li>
+
+        <!-- Layouts -->
+        <li class="menu-header small text-uppercase">
+          <span class="menu-header-text">Visualizadores</span>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <i class="menu-icon tf-icons bx bx-dock-top"></i>
+            <div data-i18n="Account Settings">Landsat</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="https://dashboard.observatorionieves.cl/" class="menu-link">
+                <div data-i18n="Account">Visualizador Mensual</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="https://dashboard.observatorionieves.cl/landsat_anual" class="menu-link">
+                <div data-i18n="Notifications">Visualizador Anual</div>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <i class="menu-icon tf-icons bx bx-dock-top"></i>
+            <div data-i18n="Authentications">Sentinel</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="https://dashboard.observatorionieves.cl/sentinel_mensual" class="menu-link">
+                <div data-i18n="Basic">Visualizador Mensual</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="https://dashboard.observatorionieves.cl/sentinel_anual" class="menu-link">
+                <div data-i18n="Basic">Visualizador Anual</div>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <i class="menu-icon tf-icons bx bx-dock-top"></i>
+            <div data-i18n="Authentications">MODIS</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="https://dashboard.observatorionieves.cl/modis_DOY" class="menu-link">
+                <div data-i18n="Error">MOD10A1 CurrentState DOY </div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="https://dashboard.observatorionieves.cl/modis_DOY_zona_central" class="menu-link">
+                <div data-i18n="Under Maintenance">MOD10A1 CurrentState DOY zona central</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="https://dashboard.observatorionieves.cl/modis_descargas" class="menu-link">
+                <div data-i18n="Under Maintenance">MOD10A1 Descargas (subsubcuencas)</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="https://dashboard.observatorionieves.cl/modis_mensual" class="menu-link">
+                <div data-i18n="Under Maintenance">MOD10A1 y MYD10A1 MonthlyIntercopartion</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="https://dashboard.observatorionieves.cl/modis_anual" class="menu-link">
+                <div data-i18n="Under Maintenance">MOD10A1 y MYD10A1 YearlyIntercopartion</div>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-header small text-uppercase">
+          <span class="menu-header-text">Base de Datos</span>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <i class="menu-icon tf-icons bx bx-data"></i>
+            <div data-i18n="Misc">Información</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="https://observatorionieves.cl/media/maps/tree_maps.html" class="menu-link" target="_blank">
+                <div data-i18n="Account">Árbol de Mapas</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="https://observatorionieves.cl/media/graph/tree_graph.html" class="menu-link" target="_blank">
+                <div data-i18n="Notifications">Árbol de Gráficos</div>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+          <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path
+              d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+          </symbol>
+        </svg>
+        <div class="card-body">
+          <div class="alert alert-primary d-flex align-items-center" role="alert" style="width:200px; height: 42px;"
+            onclick="descripcion()">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+              <use xlink:href="#info-fill" />
+            </svg>
+            <div>
+              Observatorio
+            </div>
+          </div>
+          <script> type = "text/javascript"
+            function descripcion() {
+              Swal.fire({
+                title: 'Observatorio Satelital de Nieves',
+                text: 'La nieve estacional y los glaciares aportan agua a más de dos tercios de la población de Chile considerando que las cuencas alimentadas por deshielos son mayoritarias entre las regiones de Atacama y Maule. Sin embargo, los efectos del cambio climático están evidenciando una aceleración del derretimiento de las nieves y un retroceso de glaciares. Es por eso, que la cobertura de nieves es uno de los factores climáticos más importantes, ya que afecta tanto el albedo superficial, el balance energético y la circulación hidrológica por lo cual, bajo los distintos escenarios de cambio climático, resulta vital su monitoreo, a fin de determinar los efectos en el balance hídrico y la gestión de las cuencas alimentadas por deshielo. Además, la variabilidad espaciotemporal de los patrones de cobertura de nieves se ha utilizado para generar modelos operacionales para el deshielo, pronósticos de escorrentía, asimilación de datos y calibración/validación de varios modelos hidrológicos. Una adecuada determinación de la variabilidad espaciotemporal permitirá cuantificar posibles impactos, determinar y preparar planes de gestión de riesgos de desastres, seguridad hídrica y adaptación al cambio climático. Sin embargo, la baja densidad de estaciones de monitoreo en tierra impide capturar esta variabilidad lo cual es espacialmente complejo y de alto costo en áreas de alta variabilidad ambiental como son las zonas montañosas.'
+              })
+            }
+          </script>
+          <div class="alert alert-primary d-flex align-items-center" role="alert" style="width:200px; height: 42px;"
+            onclick="promedio()">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+              <use xlink:href="#info-fill" />
+            </svg>
+            <div>
+              Promedio NDSI
+            </div>
+          </div>
+          <script> type = "text/javascript"
+            function promedio() {
+              Swal.fire({
+                position: 'top-left',
+                imageHeight: 350,
+                imageUrl: '/img/promedio.png',
+              })
+            }
+          </script>
+        </div>
+        <footer>
+          <div class="mb-2 mb-md-0" style="padding-left: 1rem;">
+            ©
+            <script>document.write(new Date().getFullYear());</script>, by
+            <a href="https://datoslab.cl/" target="_blank" class="footer-link fw-bolder">DatosLab</a>
+          </div>
+        </footer>
+        
+    </aside>
+
+    <!-- / Menu -->
+
+    <!-- Layout container -->
+
+    <div class="layout-page">
+      <!-- Navbar -->
+      <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+          <i class="bx bx-menu bx-sm"></i>
+        </a>
+      </div>
+      <!-- / Navbar -->
+
+      <!-- Content wrapper -->
+
+      <div class="content-wrapper">
+
+        <div class="card-group" style="height:400px">
+          <div class="card" style="align-items: center;">
+            <div class="card-body">
+              <div class="row">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Modis Mensual</h5>
+                    <p class="card-text">Promedio mensual del Indice Normalizado de Nieve (NDSI).</p>
+                    <button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px;">Formato</button>
+                    <button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px;">Formato</button>
+                    <button type="button" class="btn btn-primary btn-sm">Formato</button>
+                    <button type="button" class="btn btn-primary btn-sm">Formato</button>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Modis Anual</h5>
+                    <p class="card-text">Promedio anual del Indice Normalizado de Nieve (NDSI).</p>
+                    <button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px;">Formato</button>
+                    <button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px;">Formato</button>
+                    <button type="button" class="btn btn-primary btn-sm">Formato</button>
+                    <button type="button" class="btn btn-primary btn-sm">Formato</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="align-items: center;">
+            <div class="card-body">
+              <div class="row">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Sentinel Mensual</h5>
+                    <p class="card-text">Promedio mensual del Indice Normalizado de Nieve (NDSI).</p>
+                    <button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px;">Formato</button>
+                    <button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px;">Formato</button>
+                    <button type="button" class="btn btn-primary btn-sm">Formato</button>
+                    <button type="button" class="btn btn-primary btn-sm">Formato</button>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Sentinel Anual</h5>
+                    <p class="card-text">Promedio anual del Indice Normalizado de Nieve (NDSI).</p>
+                    <button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px;">Formato</button>
+                    <button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px;">Formato</button>
+                    <button type="button" class="btn btn-primary btn-sm">Formato</button>
+                    <button type="button" class="btn btn-primary btn-sm">Formato</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="content-wrapper">
+
+          <div class="card-group" style="height:450px">
+            <div class="card" style="align-items: center;">
+              <div class="card-body">
+                <div class="row">
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">MODIS MOD10A1 CurrentState DOY</h5>
+                      <p class="card-text">Con la información histórica disponible para el producto de nieves del sensor
+                        MODIS (MOD10A1) se calcula el promedio del Índice Normalizado de Nieve (NDSI) para cada día del
+                        año (DOY, Day Of Year) en el periodo 2000-2021 sobre la sección media-superior de la cuenca del
+                        Río Aconcagua.</p>
+                      <button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px;">Formato</button>
+                      <button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px;">Formato</button>
+                      <button type="button" class="btn btn-primary btn-sm">Formato</button>
+                      <button type="button" class="btn btn-primary btn-sm">Formato</button>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">MODIS MOD10A1 CurrentState DOY zona central</h5>
+                      <p class="card-text">A partir de la información histórica disponible del producto de nieves del
+                        sensor MODIS (MOD10A1) se calcula el promedio del Índice Normalizado de Nieve (NDSI) para cada
+                        día del año (DOY, Day Of Year) en el periodo 2000-2020 correspondiente a la sección
+                        media-superior de las cuencas de la zona central.</p>
+                      <button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px;">Formato</button>
+                      <button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px;">Formato</button>
+                      <button type="button" class="btn btn-primary btn-sm">Formato</button>
+                      <button type="button" class="btn btn-primary btn-sm">Formato</button>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">MODIS MOD10A1 Descargas (subsubcuencas)</h5>
+                      <p class="card-text">Se presenta la información del valor promedio del Indice Normalizado de Nieve
+                        (NDSI), el promedio del área cubierta de nieve (SCA) considerando un NDSI>40 y el promedio de
+                        "no datos" producto de la presencia de nubes, ángulo de visión, saturación del sensor entre
+                        otros. El periodo de medición comprende desde el 2000-2020.</p>
+                      <button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px;">Formato</button>
+                      <button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px;">Formato</button>
+                      <button type="button" class="btn btn-primary btn-sm">Formato</button>
+                      <button type="button" class="btn btn-primary btn-sm">Formato</button>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">MODIS MOD10A1 y MYD10A1 MonthlyIntercopartion</h5>
+                      <p class="card-text">Se establece una comparación estacional
+                        entre los distintos meses del año sobre la cuenca del Río Aconcagua, a través de MOD10A1
+                        (Terra) y MYD10A1 (Aqua) obtenidas del sensor MODIS.
+                        La información es recopilada a partir de los valores del promedio mensual del Indice Normalizado
+                        de Nieve (NDSI). </p>
+                      <button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px;">Formato</button>
+                      <button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px;">Formato</button>
+                      <button type="button" class="btn btn-primary btn-sm">Formato</button>
+                      <button type="button" class="btn btn-primary btn-sm">Formato</button>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">MODIS MOD10A1 y MYD10A1 YearlyIntercopartion</h5>
+                      <p class="card-text">Se establece una comparación espacio temporal anual de nieves sobre la cuenca
+                        del río Aconcagua, a través de MOD10A1
+                        (Terra) y MYD10A1 (Aqua) obtenidas del sensor MODIS.
+                        La información es recopilada a partir de los valores del promedio mensual del Indice Normalizado
+                        de Nieve (NDSI)</p>
+                      <button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px;">Formato</button>
+                      <button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px;">Formato</button>
+                      <button type="button" class="btn btn-primary btn-sm">Formato</button>
+                      <button type="button" class="btn btn-primary btn-sm">Formato</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
